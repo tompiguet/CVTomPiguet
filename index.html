@@ -11,14 +11,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/06392c1ddc.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
-    <link rel="icon" type="image/png" href="assets/img/quiddich.png" />
+    <link rel="icon" type="image/png" href="assets/img/cv.png" />
     <title>CV Tom Piguet</title>
 
 </head>
 
 <body>
 
-    <!--------------------------------------------------- Barre de navigation-------------------------------------------------------->
+    <!----------------------------------------- Barre de navigation---------------------------------------------->
     <nav class="navbar navbar-expand-lg fixed-top fadein" id="navbar">
         <div class="container-fluid mr-auto">
             <h1 class="nowrap">Tom Piguet</h1>
@@ -54,7 +54,7 @@
 
 
 
-    <!---------------------------------------------------------------- Accueil------------------------------------------------------------>
+    <!--------------------------------------------------- Accueil-------------------------------------------------->
 
     <div class="container-fluid fadein" id="page_accueil">
         <div class="theme-switch">
@@ -66,7 +66,7 @@
         <div class="row">
             <div class="col-md-12 d-flex justify-content-center">
                 <h1 id="titre_accueil">
-                     Développeur <br /> Web</h1>
+                    Développeur <br /> Web</h1>
             </div>
         </div>
         <img src="assets/img/moon.svg" alt="moon" title="fondaccueil" id="luneaccueil"
@@ -74,7 +74,7 @@
         <p class="scrolldown mt-5 pt-5">SCROLLDOWN -</p>
     </div>
 
-    <!---------------------------------------------------------------- A propos------------------------------------------------------>
+    <!--------------------------------------------------- A propos------------------------------------------------->
 
     <div class="container-fluid" id="page_a_propos_de_moi">
         <div class="row mt-5 mb-5 pt-5">
@@ -109,7 +109,7 @@
         </div>
     </div>
 
-    <!---------------------------------------------------------------- Parcours------------------------------------------------------->
+    <!------------------------------------------------ Parcours---------------------------------------------------->
 
     <div class="container" id="page_parcours">
         <div class="row mt-5 pt-5">
@@ -279,7 +279,7 @@
         </div>
     </div>
 
-    <!---------------------------------------------------------------- COMPETENCES------------------------------------------------------->
+    <!---------------------------------------------------- COMPETENCES--------------------------------------------->
 
 
     <div class="container-fluid" id="page_competences">
@@ -292,7 +292,7 @@
                 <h4>Front-End</h4>
                 <ul class="listecompetences">
                     <li> <img src="assets/img/html.svg" alt="photo html">HTML / CSS </li>
-                    <li> <img src="assets/img/sass.svg" alt="photo sass">SASS</li>
+                    <li> <img src="assets/img/sass.svg" alt="photo sass">SCSS</li>
                     <li> <img src="assets/img/js.svg" alt="photo js">JavaScript</li>
                     <li> <img src="assets/img/bootstrap.png" alt="photo bootstrap">Bootstrap</li>
                 </ul>
@@ -345,22 +345,22 @@
 
     </div>
 
-    <!------------------------------------------------------------ REALISATIONS----------------------------------------------------->
+    <!-------------------------------------------------- REALISATIONS---------------------------------------------->
 
     <div class="container-fluid" id="page_realisations">
         <div class="row mt-5 pt-5">
             <h2 class="intitule_de_page">Réalisations</h2>
         </div>
-        <div class="d-flex justify-content-center">
-            <p id="workinprogress">Work in progress ... ;)</p>
-        </div>
-        <div class="d-flex justify-content-center">
-            <img src="assets/img/work.gif" alt="workinprogress" id="penguin">
+        <div class="row d-flex justify-content-center mt-5">
+            <div class="col-10 col-md-4 img_container">
+                <a href="https://tompiguet.github.io/CV-Stranger-Things/"><img src="assets/img/cvstrangerthings.JPG" alt="cv Stranger things" class="real_img img-fluid ">
+                <span class="title">CV Stranger Things</span>
+                <span class="work">HTML / SCSS / JavaScript</span></a>
+            </div>
         </div>
     </div>
 
-    <!------------------------------------------------------------ CONTACT--------------------------------------------------------->
-
+    <!--------------------------------------------------- CONTACT-------------------------------------------------->
     <div class="container-fluid" id="page_contact">
         <div class="row mt-5 pt-5">
             <h2 class="intitule_de_page">Contactez-moi !</h2>
@@ -368,7 +368,7 @@
     </div>
 
 
-    <!------------------------------------------------------------ FOOTER----------------------------------------------------------->
+    <!---------------------------------------------------- FOOTER------------------------------------------------->
     <footer class="container-fluid">
         <div class="row">
             <div class="col order-1 nowrap">
@@ -390,7 +390,7 @@
     </footer>
 
 
-    <!------------------ apparition des différents éléments en fonction du scroll avec le script ScrollReveal -------------------------->
+    <!------------ apparition des différents éléments en fonction du scroll avec le script ScrollReveal ----------->
     <script>
         ScrollReveal({ duration: 2000 }).reveal('#phototom', { delay: 400 });
         ScrollReveal({ duration: 2000 }).reveal('.inner');
@@ -401,9 +401,10 @@
         ScrollReveal({ duration: 2000 }).reveal('#competence_colonne5', { delay: 1200 });
     </script>
 
-    <!---------------------------------------------------------- Bootstrap JS -------------------------------------------------------->
+    <!---------------------------------------------- Bootstrap JS ------------------------------------------------>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
 
 
 </body>
+
 </html>
