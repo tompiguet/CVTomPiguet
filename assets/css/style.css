@@ -57,30 +57,30 @@ body h2, body h4 {
 }
 
 /* ------------------------------Fonds et dimensions des différentes pages : -------------------------------------*/
-#page_accueil {
+#homepage {
   background-color: #fff7ee;
   height: 100vh;
   overflow: auto;
 }
 
-#page_a_propos_de_moi {
+#aboutMe {
   background-color: #ffffff;
   height: auto;
   overflow: auto;
 }
 
-#page_parcours {
+#experiencesPage {
   height: auto;
   overflow: auto;
 }
 
-#page_competences {
+#skillsPage {
   background-color: #ffffff;
   height: auto;
   overflow: auto;
 }
 
-#page_realisations {
+#creationsPage {
   background-color: #fff7ee;
   height: 100vh;
   overflow: auto;
@@ -205,7 +205,7 @@ body h2, body h4 {
   border: none;
 }
 
-#page_a_propos_de_moi p {
+#aboutMe p {
   font-size: 1.3em;
 }
 
@@ -215,7 +215,7 @@ body h2, body h4 {
   width: 40%;
 }
 
-#page_parcours h2 {
+#experiencesPage h2 {
   text-align: center;
   margin-bottom: 20px;
 }
@@ -382,7 +382,7 @@ body h2, body h4 {
   float: right;
 }
 
-.main-timeline .title {
+.main-timeline .experienceTitle {
   font-size: 19px;
   line-height: 24px;
   margin: 0 0 15px 0;
@@ -414,7 +414,7 @@ body h2, body h4 {
   .main-timeline .timeline-content {
     padding: 10px 0 10px 30px;
   }
-  .main-timeline .title {
+  .main-timeline .experienceTitle {
     font-size: 17px;
   }
   .main-timeline .timeline:nth-child(2n) .timeline-content {
@@ -465,18 +465,18 @@ body h2, body h4 {
     text-align: center;
     padding: 10px 0;
   }
-  .main-timeline .title {
+  .main-timeline .experienceTitle {
     margin-bottom: 10px;
   }
 }
 
 /* -----------------------------------------------COMPETENCES----------------------------------------------*/
-#page_competences h2 {
+#skillsPage h2 {
   text-align: center;
   margin-bottom: 5vh;
 }
 
-#page_competences h4 {
+#skillsPage h4 {
   text-align: center;
 }
 
