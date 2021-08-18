@@ -572,10 +572,15 @@ body {
 
 /* Container des images et du texte dans les certifications */
 .img_container {
+    img {
+        transition: 0.2s;
+    }
+
     position: relative;
     text-align: center;
-    height: 200px;
+    max-height: 180px;
     overflow: hidden;
+    margin-bottom: 20px;
 }
 
 .real_img {
@@ -590,14 +595,13 @@ body {
         width: fit-content;
         top: 30%;
         left: 50%;
+        padding-left: 15px;
+        padding-right: 15px;
         transform: translate(-50%, -50%);
         font-size: 1.8em;
         color: rgb(255, 255, 255);
         opacity: 0;
         transition: 0.2s;
-    }
-
-    .realTitle {
         font-weight: 400;
         text-shadow: 1px 1px 2px black;
     }
@@ -606,10 +610,12 @@ body {
 .work {
     position: absolute;
     width: fit-content;
-    top: 60%;
+    top: 74%;
     left: 50%;
+    padding-left: 15px;
+    padding-right: 15px;
     transform: translate(-50%, -50%);
-    font-size: 1.2em;
+    font-size: 1.1rem;
     color: rgb(255, 255, 255);
     opacity: 0;
     transition: 0.2s;

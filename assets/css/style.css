@@ -554,8 +554,14 @@ body h2, body h4 {
 .img_container {
   position: relative;
   text-align: center;
-  height: 200px;
+  max-height: 180px;
   overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.img_container img {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .real_img {
@@ -573,6 +579,8 @@ body h2, body h4 {
   width: fit-content;
   top: 30%;
   left: 50%;
+  padding-left: 15px;
+  padding-right: 15px;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   font-size: 1.8em;
@@ -580,9 +588,6 @@ body h2, body h4 {
   opacity: 0;
   -webkit-transition: 0.2s;
   transition: 0.2s;
-}
-
-.realTitle {
   font-weight: 400;
   text-shadow: 1px 1px 2px black;
 }
@@ -592,11 +597,13 @@ body h2, body h4 {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  top: 60%;
+  top: 74%;
   left: 50%;
+  padding-left: 15px;
+  padding-right: 15px;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  font-size: 1.2em;
+  font-size: 1.1rem;
   color: white;
   opacity: 0;
   -webkit-transition: 0.2s;
