@@ -1,12 +1,22 @@
+// Set de couleurs 1
+$navColor: rgba(255, 255, 255, 0.938);
+$colorOne: rgb(255, 255, 255);
+$colorTwo: rgb(243, 236, 229);
+$generalTextColor: rgb(0, 0, 0);
+$titleColor: rgb(0, 0, 0);
+
 body {
     font-family: "Montserrat", sans-serif; /* Utilisation de la police Montserra pour tout le body */
     font-weight: 300;
     margin: 0;
     padding: 0;
-    h1,h3 {
+    color: $generalTextColor;
+    h1,
+    h3 {
         font-weight: 300;
     }
-    h2, h4 {
+    h2,
+    h4 {
         font-weight: 400;
     }
 }
@@ -14,13 +24,13 @@ body {
 /*---------------------------------------------- Navbar ---------------------------------------------*/
 
 #navbar {
-    background-color: rgba(255, 255, 255, 0.938); /* rgbA pour faire l'opacité */
+    background-color: $navColor; /* rgbA pour faire l'opacité */
     font-family: "Montserrat", sans-serif;
     transition: 0.6s;
 }
 
 .navbar-toggler-icon {
-    color: rgb(252, 252, 252);
+    color: $colorOne;
 }
 
 #burger {
@@ -30,7 +40,7 @@ body {
 
 .link {
     text-decoration: none;
-    color: rgb(0, 0, 0);
+    color: $generalTextColor;
     transition: 0.5s ease;
     -webkit-transition: all 0.5s;
     font-size: 1.4rem;
@@ -51,13 +61,13 @@ body {
 /* ------------------------------Fonds et dimensions des différentes pages : -------------------------------------*/
 
 #homepage {
-    background-color: rgb(255, 247, 238);
+    background-color: $colorTwo;
     height: 100vh;
     overflow: auto;
 }
 
 #aboutMe {
-    background-color: #ffffff;
+    background-color: $colorOne;
     height: auto;
     overflow: auto;
 }
@@ -68,13 +78,13 @@ body {
 }
 
 #skillsPage {
-    background-color: #ffffff;
+    background-color: $colorOne;
     height: auto;
     overflow: auto;
 }
 
 #creationsPage {
-    background-color: rgb(255, 247, 238);
+    background-color: $colorTwo;
     height: 100vh;
     overflow: auto;
 }
@@ -94,7 +104,7 @@ body {
 #titre_accueil {
     font-size: 7vw;
     letter-spacing: 0.05em;
-    color: black;
+    color: $titleColor;
     z-index: 1;
     margin-left: 20vw;
     text-align: right;
@@ -108,7 +118,7 @@ body {
     margin-left: 14vw;
     height: 86%;
     border-radius: 50%;
-    box-shadow: 20px 20px 65px #ccc6be, /*ombre de la lune*/ -20px -20px 65px #ffffff;
+    box-shadow: 20px 20px 65px #ccc6be, /*ombre de la lune*/ -20px -20px 65px $colorOne;
 }
 
 .scrolldown {
@@ -214,6 +224,10 @@ body {
     border-radius: 2%;
 }
 
+.card {
+    background-color: $colorOne;
+}
+
 /*texte de présentation Tom*/
 
 #presentation_tom {
@@ -295,7 +309,7 @@ body {
 }
 
 .main-timeline .icon:before {
-    background: #fff;
+    background: $colorOne;
     border: 2px solid #232323;
     left: -3px;
 }
@@ -356,7 +370,7 @@ body {
 }
 
 .main-timeline .date-outer:before {
-    background: #fff;
+    background: $colorOne;
     border: 2px solid #232323;
     left: -6px;
 }
@@ -512,7 +526,7 @@ body {
     white-space: nowrap; /*empeche d'aller a la ligne */
 }
 
-.listecompetences img {
+.littleLogo {
     width: 45px;
     height: auto;
 }
@@ -528,7 +542,7 @@ body {
 #competence_colonne1,
 #competence_colonne3,
 #competence_colonne5 {
-    background-color: rgb(255, 247, 238);
+    background-color: $colorTwo;
 }
 
 /* --------------------Animation Camion Pompier--------------------------- */
@@ -538,7 +552,7 @@ body {
 }
 
 #chemincamion {
-    background-color: rgb(255, 255, 255);
+    background-color: $colorOne;
     height: 90px;
     width: 100%;
     overflow: hidden;
@@ -571,25 +585,26 @@ body {
 /*----------------------------------------------------REALISATIONS-----------------------------------------------*/
 
 /* Container des images et du texte dans les certifications */
-.img_container {
-    img {
-        transition: 0.2s;
+#creationsPage {
+    .img_container {
+        img {
+            transition: 0.2s;
+        }
+
+        position: relative;
+        text-align: center;
+        max-height: 180px;
+        overflow: hidden;
+        margin-bottom: 20px;
     }
 
-    position: relative;
-    text-align: center;
-    max-height: 180px;
-    overflow: hidden;
-    margin-bottom: 20px;
-}
+    .real_img {
+        transition: 0.2s;
+        margin-bottom: 20px;
+        border-radius: 1%;
+    }
 
-.real_img {
-    transition: 0.2s;
-    margin-bottom: 20px;
-    border-radius: 1%;
-}
-
-/* centrage du texte au milieu de l'image */
+    /* centrage du texte au milieu de l'image */
     .title {
         position: absolute;
         width: fit-content;
@@ -599,40 +614,46 @@ body {
         padding-right: 15px;
         transform: translate(-50%, -50%);
         font-size: 1.8em;
-        color: rgb(255, 255, 255);
+        color: $colorOne;
         opacity: 0;
         transition: 0.2s;
         font-weight: 400;
         text-shadow: 1px 1px 2px black;
     }
 
-
-.work {
-    position: absolute;
-    width: fit-content;
-    top: 74%;
-    left: 50%;
-    padding-left: 15px;
-    padding-right: 15px;
-    transform: translate(-50%, -50%);
-    font-size: 1.1rem;
-    color: rgb(255, 255, 255);
-    opacity: 0;
-    transition: 0.2s;
-    font-weight: 400;
-    text-shadow: 1px 1px 2px black;
-}
-
-.img_container:hover {
-    a,
-    img {
-        opacity: 0.9;
-    }
-    .title {
-        opacity: 1;
-    }
     .work {
-        opacity: 1;
+        position: absolute;
+        width: fit-content;
+        top: 74%;
+        left: 50%;
+        padding-left: 15px;
+        padding-right: 15px;
+        transform: translate(-50%, -50%);
+        font-size: 1.1rem;
+        color: $colorOne;
+        opacity: 0;
+        transition: 0.2s;
+        font-weight: 400;
+        text-shadow: 1px 1px 2px black;
+    }
+
+    .img_container:hover {
+        a,
+        img {
+            opacity: 0.9;
+        }
+        .title {
+            opacity: 1;
+        }
+        .work {
+            opacity: 1;
+        }
+    }
+
+    .modal {
+        li {
+            list-style-type: none;
+        }
     }
 }
 
@@ -674,7 +695,7 @@ footer i {
 }
 
 footer i:hover {
-    background-color: #292929;
+    background-color: $generalTextColor;
     transition: 0.5s ease;
     -webkit-transition: all 0.5s;
 }
@@ -688,7 +709,7 @@ footer .fa-print {
 
 .link2 {
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    color: $colorOne;
     transition: 0.5s ease;
     -webkit-transition: all 0.5s;
 }
@@ -734,7 +755,7 @@ footer .fa-print {
         width: 55%;
         height: auto;
         border-radius: 50%;
-        box-shadow: 20px 20px 65px #ccc6be, /*ombre de la lune*/ -20px -20px 65px #ffffff;
+        box-shadow: 20px 20px 65px #ccc6be, /*ombre de la lune*/ -20px -20px 65px $colorOne;
     }
 
     /* réglages du footer */
@@ -783,7 +804,7 @@ footer .fa-print {
         width: 117%;
         height: auto;
         border-radius: 50%;
-        box-shadow: 20px 20px 65px #ccc6be, /*ombre de la lune*/ -20px -20px 65px #ffffff;
+        box-shadow: 20px 20px 65px #ccc6be, /*ombre de la lune*/ -20px -20px 65px $colorOne;
     }
 
     #page_contact {

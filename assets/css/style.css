@@ -5,13 +5,16 @@ body {
   font-weight: 300;
   margin: 0;
   padding: 0;
+  color: black;
 }
 
-body h1, body h3 {
+body h1,
+body h3 {
   font-weight: 300;
 }
 
-body h2, body h4 {
+body h2,
+body h4 {
   font-weight: 400;
 }
 
@@ -25,7 +28,7 @@ body h2, body h4 {
 }
 
 .navbar-toggler-icon {
-  color: #fcfcfc;
+  color: white;
 }
 
 #burger {
@@ -58,13 +61,13 @@ body h2, body h4 {
 
 /* ------------------------------Fonds et dimensions des différentes pages : -------------------------------------*/
 #homepage {
-  background-color: #fff7ee;
+  background-color: #f3ece5;
   height: 100vh;
   overflow: auto;
 }
 
 #aboutMe {
-  background-color: #ffffff;
+  background-color: white;
   height: auto;
   overflow: auto;
 }
@@ -75,13 +78,13 @@ body h2, body h4 {
 }
 
 #skillsPage {
-  background-color: #ffffff;
+  background-color: white;
   height: auto;
   overflow: auto;
 }
 
 #creationsPage {
-  background-color: #fff7ee;
+  background-color: #f3ece5;
   height: 100vh;
   overflow: auto;
 }
@@ -113,8 +116,8 @@ body h2, body h4 {
   margin-left: 14vw;
   height: 86%;
   border-radius: 50%;
-  -webkit-box-shadow: 20px 20px 65px #ccc6be, -20px -20px 65px #ffffff;
-          box-shadow: 20px 20px 65px #ccc6be, -20px -20px 65px #ffffff;
+  -webkit-box-shadow: 20px 20px 65px #ccc6be, -20px -20px 65px white;
+          box-shadow: 20px 20px 65px #ccc6be, -20px -20px 65px white;
 }
 
 .scrolldown {
@@ -193,6 +196,10 @@ body h2, body h4 {
   text-align: justify;
   width: 80%;
   border-radius: 2%;
+}
+
+.card {
+  background-color: white;
 }
 
 /*texte de présentation Tom*/
@@ -275,7 +282,7 @@ body h2, body h4 {
 }
 
 .main-timeline .icon:before {
-  background: #fff;
+  background: white;
   border: 2px solid #232323;
   left: -3px;
 }
@@ -337,7 +344,7 @@ body h2, body h4 {
 }
 
 .main-timeline .date-outer:before {
-  background: #fff;
+  background: white;
   border: 2px solid #232323;
   left: -6px;
 }
@@ -494,7 +501,7 @@ body h2, body h4 {
   /*empeche d'aller a la ligne */
 }
 
-.listecompetences img {
+.littleLogo {
   width: 45px;
   height: auto;
 }
@@ -510,7 +517,7 @@ body h2, body h4 {
 #competence_colonne1,
 #competence_colonne3,
 #competence_colonne5 {
-  background-color: #fff7ee;
+  background-color: #f3ece5;
 }
 
 /* --------------------Animation Camion Pompier--------------------------- */
@@ -551,7 +558,11 @@ body h2, body h4 {
 
 /*----------------------------------------------------REALISATIONS-----------------------------------------------*/
 /* Container des images et du texte dans les certifications */
-.img_container {
+#creationsPage {
+  /* centrage du texte au milieu de l'image */
+}
+
+#creationsPage .img_container {
   position: relative;
   text-align: center;
   max-height: 180px;
@@ -559,20 +570,19 @@ body h2, body h4 {
   margin-bottom: 20px;
 }
 
-.img_container img {
+#creationsPage .img_container img {
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
 
-.real_img {
+#creationsPage .real_img {
   -webkit-transition: 0.2s;
   transition: 0.2s;
   margin-bottom: 20px;
   border-radius: 1%;
 }
 
-/* centrage du texte au milieu de l'image */
-.title {
+#creationsPage .title {
   position: absolute;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -592,7 +602,7 @@ body h2, body h4 {
   text-shadow: 1px 1px 2px black;
 }
 
-.work {
+#creationsPage .work {
   position: absolute;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -612,17 +622,21 @@ body h2, body h4 {
   text-shadow: 1px 1px 2px black;
 }
 
-.img_container:hover a,
-.img_container:hover img {
+#creationsPage .img_container:hover a,
+#creationsPage .img_container:hover img {
   opacity: 0.9;
 }
 
-.img_container:hover .title {
+#creationsPage .img_container:hover .title {
   opacity: 1;
 }
 
-.img_container:hover .work {
+#creationsPage .img_container:hover .work {
   opacity: 1;
+}
+
+#creationsPage .modal li {
+  list-style-type: none;
 }
 
 /*---------------------------------------------------------CONTACT--------------------------------------------------------------------*/
@@ -660,7 +674,7 @@ footer i {
 }
 
 footer i:hover {
-  background-color: #292929;
+  background-color: black;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
   -webkit-transition: all 0.5s;
@@ -719,8 +733,8 @@ footer .fa-print {
     width: 55%;
     height: auto;
     border-radius: 50%;
-    -webkit-box-shadow: 20px 20px 65px #ccc6be, -20px -20px 65px #ffffff;
-            box-shadow: 20px 20px 65px #ccc6be, -20px -20px 65px #ffffff;
+    -webkit-box-shadow: 20px 20px 65px #ccc6be, -20px -20px 65px white;
+            box-shadow: 20px 20px 65px #ccc6be, -20px -20px 65px white;
   }
   /* réglages du footer */
   footer a {
@@ -762,8 +776,8 @@ footer .fa-print {
     width: 117%;
     height: auto;
     border-radius: 50%;
-    -webkit-box-shadow: 20px 20px 65px #ccc6be, -20px -20px 65px #ffffff;
-            box-shadow: 20px 20px 65px #ccc6be, -20px -20px 65px #ffffff;
+    -webkit-box-shadow: 20px 20px 65px #ccc6be, -20px -20px 65px white;
+            box-shadow: 20px 20px 65px #ccc6be, -20px -20px 65px white;
   }
   #page_contact {
     height: 75vh;
